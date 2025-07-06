@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/aboutus.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper-slide > img {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+     <header class="nav-sec">
+      <div class="top-nav">
+        <div class="container">
+          <div class="top-nav-main">
+            <div class="top-nav-left">
+              <a href=""
+                ><img
+                  src="./assest/img/clarity_email-solid.png"
+                  alt="no"
+                />Email Address: AutocarX@gmail.com</a
+              >
+
+              <a href=""
+                ><img src="./assest/img/tdesign_call-1.png" alt="no" />Contact
+                Number: +91-7686860145</a
+              >
+            </div>
+
+            <div class="location-dropdown" id="locationDropdown">
+              <div class="location-label">
+                <!-- <i class="fas fa-crosshairs"></i> -->
+                <img
+                  src="./assest/img/fluent_my-location-16-regular.png"
+                  alt="no"
+                />
+                <span class="location-text">Location:</span>
+                <div class="location-select">
+                  <span id="selectedLocation">Los Angeles</span>
+                  <i class="fas fa-caret-down"></i>
+                </div>
+              </div>
+              <div class="dropdown-content" id="dropdownContent">
+                <div data-location="New York">New York</div>
+                <div data-location="Chicago">Chicago</div>
+                <div data-location="San Francisco">San Francisco</div>
+                <div data-location="Los Angeles" class="selected">
+                  Los Angeles
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hdr-bttm-wrpr">
+        <div class="container">
+          <div class="hdr-bttm-wrpr-inr">
+            <div class="nav-logo">
+              <a href="./index.html">
+                <img src="./assest/img/Group 6.png" alt="main-logo" />
+              </a>
+            </div>
+
+            <div class="nav-toggler">
+              <span></span>
+            </div>
+
+            <div class="nav-collapse">
+              <ul>
+                <li>
+                  <a  href="./index.html">Home</a>
+                </li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./sparepart.html">Spare Parts</a></li>
+                <li><a class="nav-links active"  href="./aboutus.html">About Us</a></li>
+                <li><a href="./contactus.html">Contact</a></li>
+              </ul>
+              <div class="nav-btn">
+                <a href="#url">
+                  <img src="./assest/img/Group 8.png" alt="cart" />
+                </a>
+                <a href="#url">
+                  <img src="./assest/img/Group 9.png" alt="search" />
+                </a>
+                <!-- <a href="#url" class="main-btn">Log In</a> -->
+                <button class="main-btn" id="loginBtn">Log In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Overlay -->
+      <div class="sidebar-overlay"></div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <button class="sidebar-close"></button>
+        <ul class="sidebar-nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./sparepart.html">Spare Parts</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li><a href="./contactus.html">Contact</a></li>
+        </ul>
+
+        <div class="sidebar-actions">
+          <div class="sidebar-icons">
+            <a href="#url">
+              <img src="./assest/img/Group 8.png" alt="cart" />
+            </a>
+            <a href="#url">
+              <img src="./assest/img/Group 9.png" alt="search" />
+            </a>
+          </div>
+          <!-- <a href="#url" class="main-btn">Log In</a>
+            -->
+          <button class="main-btn" id="sidebarLoginBtn">Log In</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="login-modal">
+        <button class="modal-close" id="modalClose">&times;</button>
+
+        <div class="modal-header">
+          <h2 class="modal-title">Welcome Back!</h2>
+          <p class="modal-subtitle">Sign in to your AutoCarX account</p>
+        </div>
+
+        <form class="login-form">
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-input"
+              placeholder="Email Address"
+            />
+          </div>
+
+          <div class="form-group">
+            <input type="password" class="form-input" placeholder="Password" />
+          </div>
+
+          <div class="form-options">
+            <label class="remember-me" id="modal1-checkbox">
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="login-btn">Sign In</button>
+        </form>
+
+        <div class="modal-divider">
+          <span>or continue with</span>
+        </div>
+
+        <div class="social-login">
+          <button class="social-btn">
+            <i class="fab fa-google"></i>
+            Google
+          </button>
+          <button class="social-btn">
+            <i class="fab fa-facebook-f"></i>
+            Facebook
+          </button>
+        </div>
+
+        <div class="signup-link">
+          Don't have an account? <a href="#">Sign up here</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+   
+
+    <section class="about-sec">
+      <div class="container">
+        <div class="row">
+          <div class="about-text">
+            <h3>About Us</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey-sec">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-12"> -->
+            <!-- <div class="journey"> -->
+              <div class="col-50">
+                <div class="our-journey">
+                  <h3>Our Journey</h3>
+                  <p class="journey-text">
+                    Lorem ipsum dolor sit amet consectetur. Ac nisi nunc turpis
+                    sit commodo turpis mi. Ipsum mattis eget nisi purus
+                    ullamcorper eget adipiscing. Aliquam leo a sed adipiscing
+                    vulputate platea. Molestie tempor mauris nulla luctus
+                    venenatis pretium. Magna amet habitant nunc nec enim
+                    scelerisque at malesuada. Amet sem iaculis dignissim
+                    faucibus amet netus nulla ut sed. Est mi lacus eget nisi.
+                    Nisi leo sapien.
+                  </p>
+                </div>
+                <div class="our-mission">
+                  <h3>Our Mission</h3>
+                  <p class="journey-text">
+                    Lorem ipsum dolor sit amet consectetur. Commodo odio ac
+                    blandit in eu lectus cum sed ut. Fringilla vitae orci morbi
+                    magna parturient libero neque ultricies. Morbi risus urna
+                    orci cras vitae facilisi at. Morbi ultricies adipiscing
+                    aliquet tristique eget. Eget malesuada ultricies id amet.
+                    Posuere elementum lobortis libero integer tellus. Sed leo
+                    commodo lobortis amet duis suspendisse lobortis dictumst
+                    orci. Sit lectus.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-50">
+                <div class="picture">
+                  <img src="./assest/img/image (200).png" alt="" />
+                </div>
+              </div>
+            <!-- </div> -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- countdown section  -->
+   
+<section class="Achievements" id="achievements-section">
+      <div class="container">
+        <div class="Achievements-wrapper">
+          <div class="Achievements-top-part">
+            <span>Achievements</span>
+            <h3>Our Track Record Speaks for Itself</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-57">
+              <div class="stat-card">
+                <div class="icon calendar">
+                  <img src="./assest/img/line-md_calendar.png" alt="no" />
+                </div>
+                <div class="main-stat">
+                  <div class="counter" id="years">0</div>
+                  <div class="label">Years of Excellence</div>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet consectetur. <br />
+                  Volutpat bibendum cras libero magna nibh cras.<br />
+                  Nec morbi hac vulputate amet tempus.
+                </div>
+              </div>
+            </div>
+            <div class="col-57">
+              <div class="stat-card">
+                <div class="icon happy">
+                  <img src="./assest/img/wpf_happy.png" alt="no" />
+                </div>
+                <div class="main-stat">
+                  <div class="counter" id="clients">0</div>
+                  <div class="label">Happy Clients</div>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet consectetur.<br />
+                  Volutpat bibendum cras libero magna nibh cras.<br />
+                  Nec morbi hac vulputate amet tempus.
+                </div>
+              </div>
+            </div>
+            <div class="col-57">
+              <div class="stat-card">
+                <div class="icon star">
+                  <img src="./assest/img/ic_outline-star.png" alt="no" />
+                </div>
+                <div class="main-stat">
+                  <div class="counter" id="satisfaction">0</div>
+                  <div class="label">Customer Satisfaction</div>
+                </div>
+                <div class="description">
+                  Lorem ipsum dolor sit amet consectetur.<br />
+                  Volutpat bibendum cras libero magna nibh cras.<br />
+                  Nec morbi hac vulputate amet tempus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  <!-- founder section  -->
+    <section class="founder-sec">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-12"> -->
+            <!-- <div class="founder"> -->
+              <div class="col-50">
+                <div class="picture1">
+                  <img src="./assest/img/image (210).png" alt="" />
+                </div>
+              </div>
+
+              <div class="col-50">
+                <div class="our-founder">
+                  <h3>Meet Our Founder</h3>
+                  <p class="journey-text">
+                    Lorem ipsum dolor sit amet consectetur. Mus facilisi gravida
+                    pharetra morbi netus. Eget ultrices laoreet ut urna orci.
+                    Duis et adipiscing diam mauris est auctor dictum est. Ligula
+                    pretium pharetra vitae natoque tellus pulvinar mauris nunc.
+                    Elementum at tortor sed nunc sit. Elementum eu et tempus
+                    lacus ipsum fermentum etiam. Enim cursus in sit gravida
+                    auctor nullam sed ac amet tristique egestas.
+                  </p>
+                </div>
+
+                <div class="leadership">
+                  <h3>Leadership & Expertise</h3>
+                  <p class="journey-text">
+                    Lorem ipsum dolor sit amet consectetur. Et ut eget ac eu
+                    feugiat ut orci aliquam mus. Massa in faucibus quisque elit.
+                    Sodales accumsan quis enim pretium. A morbi eu in lobortis
+                    at lectus arcu. Mollis faucibus viverra fringilla senectus.
+                    Iaculis mauris mattis nulla dolor suspendisse pharetra.
+                    Vitae enim sed congue diam diam. Nulla adipiscing fermentum
+                    a sed phasellus suspendisse feugiat congue.
+                  </p>
+                </div>
+              </div>
+            <!-- </div> -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="card-sec">
+      <div class="container">
+        <div class="row">
+          <div class="location">
+            <h3>Our Locations</h3>
+          </div>
+
+          <div id="firstslider" class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./assest/img/image (22).png" alt="no" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assest/img/Component 1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assest/img/Component 2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assest/img/Component 3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assest/img/Component 2.png" alt="" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper2 = new Swiper("#firstslider", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        autoplay: {
+          delay: 1000,
+        },
+
+        breakpoints: {
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          475: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        //   navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        //   },
+
+        //   // And if we need scrollbar
+        //   scrollbar: {
+        //     el: '.swiper-scrollbar',
+        //   },
+      });
+    </script>
+
+    <!-- testmonial section  -->
+
+    <section class="testimonial-header">
+      <div class="container">
+        <div class="testimonial-top-part">
+          <span>Testimonials</span>
+          <h3>What our clients say about us</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="container">
+        <div id="secondslider" class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Repeat slide -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-man">
+                  <img
+                    src="./assest/img/image (18).png"
+                    alt="testimonial person"
+                  />
+                </div>
+                <h5 class="testimonial-name">Vanessa Taylor</h5>
+                <p class="testimonial-profession">Rider</p>
+                <p class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur. Quam aliquam egestas
+                  velit vitae eget aliquam risus phasellus risus. Morbi eget
+                  semper.
+                </p>
+                <div class="icon-star">
+                  <!-- <img src="./assest/img/Group 64.png" alt="star icon" /> -->
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-man">
+                  <img
+                    src="./assest/img/image (17).png"
+                    alt="testimonial person"
+                  />
+                </div>
+                <h5 class="testimonial-name">Vanessa Taylor</h5>
+                <p class="testimonial-profession">Rider</p>
+                <p class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur. Quam aliquam egestas
+                  velit vitae eget aliquam risus phasellus risus. Morbi eget
+                  semper.
+                </p>
+                <div class="icon-star">
+                  <!-- <img src="./assest/img/Group 64.png" alt="star icon" /> -->
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-man">
+                  <img
+                    src="./assest/img/image (15).png"
+                    alt="testimonial person"
+                  />
+                </div>
+                <h5 class="testimonial-name">Vanessa Taylor</h5>
+                <p class="testimonial-profession">Rider</p>
+                <p class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur. Quam aliquam egestas
+                  velit vitae eget aliquam risus phasellus risus. Morbi eget
+                  semper.
+                </p>
+                <div class="icon-star">
+                  <!-- <img src="./assest/img/Group 64.png" alt="star icon" /> -->
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-man">
+                  <img
+                    src="./assest/img/image (15).png"
+                    alt="testimonial person"
+                  />
+                </div>
+                <h5 class="testimonial-name">Vanessa Taylor</h5>
+                <p class="testimonial-profession">Rider</p>
+                <p class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur. Quam aliquam egestas
+                  velit vitae eget aliquam risus phasellus risus. Morbi eget
+                  semper.
+                </p>
+                <div class="icon-star">
+                  <!-- <img src="./assest/img/Group 64.png" alt="star icon" /> -->
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-man">
+                  <img
+                    src="./assest/img/image (16).png"
+                    alt="testimonial person"
+                  />
+                </div>
+                <h5 class="testimonial-name">Vanessa Taylor</h5>
+                <p class="testimonial-profession">Rider</p>
+                <p class="testimonial-content">
+                  Lorem ipsum dolor sit amet consectetur. Quam aliquam egestas
+                  velit vitae eget aliquam risus phasellus risus. Morbi eget
+                  semper.
+                </p>
+                <div class="icon-star">
+                  <!-- <img src="./assest/img/Group 64.png" alt="star icon" /> -->
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- You can copy and paste the above block for more slides -->
+            <!-- Add more swiper-slide blocks here if needed -->
+          </div>
+
+          <!-- Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+
+    <!-- footer section  -->
+
+     <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-41">
+            <div class="footer-logo">
+              <img src="./assest/img/Group 6 (1).png" alt="no" />
+            </div>
+            <p class="footer-content-p1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              aliquam justo nec ligula eleifend efficitur.
+            </p>
+            <p class="footer-content-p2">Subscribe to our newsletter</p>
+            <input
+              type="email"
+              id="footer-email"
+              placeholder="Enter Your E-Mail"
+            />
+            <div class="footer-side1-btn">
+              <a href="#url">Subscribe Now</a>
+            </div>
+          </div>
+          <div class="col-15 footer2div">
+            <h3>Quick Links</h3>
+            <ul>
+              <li class="footer2divlink1">
+                <a href="./aboutus.html"> About Us</a>
+              </li>
+              <li class="footer2divlink2">
+                <a href="./contactus.html">Contact Us</a>
+              </li>
+              <li class="footer2divlink3">
+                <a href="./sparepart.html">Spare Parts</a>
+              </li>
+              <li class="footer2divlink4">
+                <a href="./services.html">Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-25 footer3div">
+            <h3>Address</h3>
+            <p>
+              (323) 661-3953<br />
+              3506 Madera Ave<br />
+              Los Angeles, California(CA), 90039
+            </p>
+          </div>
+          <div class="col-20 footer4div">
+            <h3>Stay Connected</h3>
+            <ul>
+              <li class="footer4div-logo-content1">
+                <div>
+                  <img src="./assest/img/Group 52.png" alt="no" />
+                </div>
+                <a href="#url">Facebook</a>
+              </li>
+              <li class="footer4div-logo-content2">
+                <div>
+                  <img src="./assest/img/Group 53.png" alt="no" />
+                </div>
+                <a href="#url">Instagram</a>
+              </li>
+              <li class="footer4div-logo-content3">
+                <div>
+                  <img src="./assest/img/Group 56.png" alt="no" />
+                </div>
+                <a href="#url">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-line"></div>
+        <div class="footer-bottom">
+          <p>© 2025 Autocar X. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#url">Privacy Policy</a>
+            <a href="#url">Terms of Service</a>
+            <a href="#url">Cookie Settings</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/hamberger.js"></script>
+    <script src="./js/countdown.js"></script>
+    <script src="./js/locationoption.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/testmonial.js"></script>
+  </body>
+</html>
