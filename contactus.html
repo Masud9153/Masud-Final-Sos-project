@@ -11,8 +11,13 @@
       rel="stylesheet"
     />
   </head>
+  <!-- AOS CSS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <body>
+  <!-- Cursor CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+
+  <body id="luxy">
 
      <!-- navbar -->
 
@@ -185,7 +190,7 @@
 
     <!-- contact-section -->
 
-    <section class="contact-sec">
+    <section class="contact-sec"  data-aos="flip-left">
       <div class="container">
         <div class="row">
           <div class="contact-text">
@@ -201,12 +206,12 @@
       <div class="container">
         <!-- <div class="row"> -->
         <div class="contact-sec2">
-          <div class="contact-header">
+          <div class="contact-header" data-aos="zoom-in-up">
             <span class="contact-label">Contact</span>
             <h2 class="contact-title">Get in touch</h2>
           </div>
 
-          <form class="contact-form" action="#" method="POST">
+          <form class="contact-form" action="#" method="POST" data-aos="zoom-in-up">
             <div class="form-container1">
               <div class="form-row">
                 <div class="form-group">
@@ -278,7 +283,9 @@
         <div class="row">
           <!-- <div class="col-12"> -->
             <!-- <div class="address"> -->
-              <div class="col-6">
+              <div class="col-6" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                 <div class="contact-add">
                   <h3>Contact Address:</h3>
                   <p>
@@ -305,7 +312,9 @@
                 </div>
               </div>
 
-              <div class="col-6">
+              <div class="col-6" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                 <!-- <div class="map">
                                 <img src="./assest/img/Rectangle 61.png" alt="">
                             </div> -->
@@ -337,24 +346,31 @@
       <div class="container">
         <div class="row">
           <div class="col-41">
-            <div class="footer-logo">
+            <div class="footer-logo" data-aos="zoom-out-down">
               <img src="./assest/img/Group 6 (1).png" alt="no" />
             </div>
-            <p class="footer-content-p1">
+            <p class="footer-content-p1" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               aliquam justo nec ligula eleifend efficitur.
             </p>
-            <p class="footer-content-p2">Subscribe to our newsletter</p>
+            <p class="footer-content-p2"data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500">Subscribe to our newsletter</p>
             <input
               type="email"
               id="footer-email"
               placeholder="Enter Your E-Mail"
+              data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
             />
-            <div class="footer-side1-btn">
+            <div class="footer-side1-btn"data-aos="zoom-in">
               <a href="#url">Subscribe Now</a>
             </div>
           </div>
-          <div class="col-15 footer2div">
+          <div class="col-15 footer2div" data-aos="zoom-in">
             <h3>Quick Links</h3>
             <ul>
               <li class="footer2divlink1">
@@ -371,7 +387,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-25 footer3div">
+          <div class="col-25 footer3div" data-aos="zoom-in">
             <h3>Address</h3>
             <p>
               (323) 661-3953<br />
@@ -379,7 +395,7 @@
               Los Angeles, California(CA), 90039
             </p>
           </div>
-          <div class="col-20 footer4div">
+          <div class="col-20 footer4div" data-aos="zoom-in">
             <h3>Stay Connected</h3>
             <ul>
               <li class="footer4div-logo-content1">
@@ -416,7 +432,27 @@
       </div>
     </section>
 
+     <!-- Luxy.js -->
+  <script src="https://cdn.jsdelivr.net/npm/luxy.js@0.1.0/dist/luxy.min.js"></script>
 
+   
+    <!--Cursor js -->
+
+  <!-- <script src="https://unpkg.com/kursor"></script>
+  <script>
+    new kursor({
+      type: 1,
+      removeDefaultCursor: true,
+    });
+  </script> -->
+
+
+
+     <!-- AOS JS    -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 
     <script src="./js/hamberger.js"></script>

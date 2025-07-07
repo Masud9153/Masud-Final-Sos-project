@@ -21,6 +21,12 @@
     list-style-type:none ;
   }
 
+html,
+body {
+  user-select: none;
+  overflow-x: hidden;
+}
+
 body{
   overflow-x: hidden;
   background-color: #D9D9D999;

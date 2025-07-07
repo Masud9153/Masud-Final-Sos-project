@@ -16,6 +16,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <!-- Cursor CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+
+    <!-- AOS CSS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <style>
       .swiper-slide > img {
         width: 100%;
@@ -23,7 +29,7 @@
     </style>
   </head>
 
-  <body>
+  <body id="luxy">
     <!-- navbar -->
 
      <header class="nav-sec">
@@ -199,9 +205,9 @@
 
 
 
-   
+   <!-- About scction header  -->
 
-    <section class="about-sec">
+    <section class="about-sec" data-aos="flip-left">
       <div class="container">
         <div class="row">
           <div class="about-text">
@@ -216,7 +222,9 @@
         <div class="row">
           <!-- <div class="col-12"> -->
             <!-- <div class="journey"> -->
-              <div class="col-50">
+              <div class="col-50" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                 <div class="our-journey">
                   <h3>Our Journey</h3>
                   <p class="journey-text">
@@ -245,7 +253,9 @@
                 </div>
               </div>
 
-              <div class="col-50">
+              <div class="col-50" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                 <div class="picture">
                   <img src="./assest/img/image (200).png" alt="" />
                 </div>
@@ -261,14 +271,16 @@
 <section class="Achievements" id="achievements-section">
       <div class="container">
         <div class="Achievements-wrapper">
-          <div class="Achievements-top-part">
+          <div class="Achievements-top-part" data-aos="zoom-in-up">
             <span>Achievements</span>
             <h3>Our Track Record Speaks for Itself</h3>
           </div>
 
           <div class="row">
             <div class="col-57">
-              <div class="stat-card">
+              <div class="stat-card" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="icon calendar">
                   <img src="./assest/img/line-md_calendar.png" alt="no" />
                 </div>
@@ -284,7 +296,9 @@
               </div>
             </div>
             <div class="col-57">
-              <div class="stat-card">
+              <div class="stat-card" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="icon happy">
                   <img src="./assest/img/wpf_happy.png" alt="no" />
                 </div>
@@ -300,7 +314,9 @@
               </div>
             </div>
             <div class="col-57">
-              <div class="stat-card">
+              <div class="stat-card" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="icon star">
                   <img src="./assest/img/ic_outline-star.png" alt="no" />
                 </div>
@@ -329,13 +345,17 @@
         <div class="row">
           <!-- <div class="col-12"> -->
             <!-- <div class="founder"> -->
-              <div class="col-50">
+              <div class="col-50" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                 <div class="picture1">
                   <img src="./assest/img/image (210).png" alt="" />
                 </div>
               </div>
 
-              <div class="col-50">
+              <div class="col-50" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                 <div class="our-founder">
                   <h3>Meet Our Founder</h3>
                   <p class="journey-text">
@@ -375,9 +395,11 @@
             <h3>Our Locations</h3>
           </div>
 
-          <div id="firstslider" class="swiper">
+          <div id="firstslider" class="swiper" >
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper"  data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
               <!-- Slides -->
               <div class="swiper-slide">
                 <img src="./assest/img/image (22).png" alt="no" />
@@ -465,7 +487,9 @@
     <section class="testimonial-section">
       <div class="container">
         <div id="secondslider" class="swiper">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper"  data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
             <!-- Repeat slide -->
             <div class="swiper-slide">
               <div class="testimonial-card">
@@ -613,24 +637,31 @@
       <div class="container">
         <div class="row">
           <div class="col-41">
-            <div class="footer-logo">
+            <div class="footer-logo"data-aos="zoom-out-down">
               <img src="./assest/img/Group 6 (1).png" alt="no" />
             </div>
-            <p class="footer-content-p1">
+            <p class="footer-content-p1" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               aliquam justo nec ligula eleifend efficitur.
             </p>
-            <p class="footer-content-p2">Subscribe to our newsletter</p>
+            <p class="footer-content-p2" data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500">Subscribe to our newsletter</p>
             <input
               type="email"
               id="footer-email"
               placeholder="Enter Your E-Mail"
+               data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
             />
-            <div class="footer-side1-btn">
+            <div class="footer-side1-btn" data-aos="zoom-in">
               <a href="#url">Subscribe Now</a>
             </div>
           </div>
-          <div class="col-15 footer2div">
+          <div class="col-15 footer2div"  data-aos="zoom-in">
             <h3>Quick Links</h3>
             <ul>
               <li class="footer2divlink1">
@@ -647,7 +678,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-25 footer3div">
+          <div class="col-25 footer3div"  data-aos="zoom-in">
             <h3>Address</h3>
             <p>
               (323) 661-3953<br />
@@ -655,7 +686,7 @@
               Los Angeles, California(CA), 90039
             </p>
           </div>
-          <div class="col-20 footer4div">
+          <div class="col-20 footer4div"  data-aos="zoom-in">
             <h3>Stay Connected</h3>
             <ul>
               <li class="footer4div-logo-content1">
@@ -691,6 +722,27 @@
         </div>
       </div>
     </section>
+
+     <!-- Luxy.js -->
+  <script src="https://cdn.jsdelivr.net/npm/luxy.js@0.1.0/dist/luxy.min.js"></script>
+
+   
+    <!--Cursor js -->
+
+  <!-- <script src="https://unpkg.com/kursor"></script>
+  <script>
+    new kursor({
+      type: 1,
+      removeDefaultCursor: true,
+    });
+  </script> -->
+
+
+    <!-- AOS JS    -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="./js/hamberger.js"></script>
     <script src="./js/countdown.js"></script>

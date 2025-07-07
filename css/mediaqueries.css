@@ -443,6 +443,7 @@
    .sidebar {
     width: 100%;
     right: -100%;
+    padding: 80px 75px 30px;
   }
   
   .top-nav-left {
@@ -743,6 +744,10 @@
     display: flex !important;
     justify-content: center;
   } */
+
+  .testimonial-section {
+    margin-top: 15px;
+}
 
   .testimonial-man {
     max-width: 80px;

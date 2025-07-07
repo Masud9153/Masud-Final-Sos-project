@@ -21,6 +21,12 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  user-select: none;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #f1f1f1;
   font-family: claritycity-light;
@@ -2176,6 +2182,11 @@ a {
 .testimonial-header {
   margin-top: 75px;
 }
+
+.testimonial-section{
+  margin-top: 40px;
+}
+
 
 .testimonial-top-part {
   margin: auto;

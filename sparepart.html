@@ -13,8 +13,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- Cursor CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+
+
+  <!-- AOS CSS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="luxy">
 
     <!-- navbar -->
 
@@ -191,9 +198,9 @@
 
 
 
+ <!-- Spare part header  -->
 
-
-    <section class="spare-part">
+    <section class="spare-part" data-aos="flip-left">
       <div class="container">
         <div class="spare-part-bg">Spare Parts</div>
       </div>
@@ -201,19 +208,19 @@
 
     <section class="products-banner">
       <div class="container">
-        <div class="products-banner-title">
+        <div class="products-banner-title" data-aos="zoom-in-up">
           <span>Products</span>
           <h3>Products from our store</h3>
         </div>
       </div>
     </section>
 
-    <section class="sparepart3-section">
+    <section class="sparepart3-section" >
       <div class="container">
         <div class="row sparepart-dropdown">
           <!-- Brand Dropdown -->
           <div class="col-31">
-            <div class="dropdown-wrapper">
+            <div class="dropdown-wrapper" data-aos="zoom-in">
               <select>
                 <option disabled selected>Select Brand</option>
                 <option>Toyota</option>
@@ -224,7 +231,7 @@
           </div>
           <!-- Model Dropdown -->
           <div class="col-31">
-            <div class="dropdown-wrapper">
+            <div class="dropdown-wrapper" data-aos="zoom-in">
               <select>
                 <option disabled selected>Select Model</option>
                 <option>Corolla</option>
@@ -235,7 +242,7 @@
           </div>
 
           <div class="col-31">
-            <div class="dropdown-wrapper">
+            <div class="dropdown-wrapper" data-aos="zoom-in">
               <select>
                 <option disabled selected>Set Price Range</option>
                 <option>Below ₹5L</option>
@@ -246,7 +253,7 @@
           </div>
 
           <!-- Search Button -->
-          <div class="col-31">
+          <div class="col-31" data-aos="zoom-in">
             <button class="search-btn">Search</button>
           </div>
         </div>
@@ -258,7 +265,7 @@
       <div class="container">
         <div class="mobile-filters-row">
           <!-- Price Filter Dropdown -->
-          <div class="mobile-filter-dropdown">
+          <div class="mobile-filter-dropdown" data-aos="zoom-in">
             <button
               class="mobile-filter-btn"
               onclick="toggleMobileFilter('price')"
@@ -290,7 +297,7 @@
           </div>
 
           <!-- Brand Filter Dropdown -->
-          <div class="mobile-filter-dropdown">
+          <div class="mobile-filter-dropdown" data-aos="zoom-in">
             <button
               class="mobile-filter-btn"
               onclick="toggleMobileFilter('brand')"
@@ -353,7 +360,7 @@
           </div>
 
           <!-- Category Filter Dropdown -->
-          <div class="mobile-filter-dropdown">
+          <div class="mobile-filter-dropdown" data-aos="zoom-in">
             <button
               class="mobile-filter-btn"
               onclick="toggleMobileFilter('category')"
@@ -404,7 +411,7 @@
           </div>
 
           <!-- Customer Service Filter Dropdown -->
-          <div class="mobile-filter-dropdown">
+          <div class="mobile-filter-dropdown" data-aos="zoom-in">
             <button
               class="mobile-filter-btn"
               onclick="toggleMobileFilter('service')"
@@ -455,7 +462,7 @@
           </div>
 
           <!-- Discount Filter Dropdown -->
-          <div class="mobile-filter-dropdown">
+          <div class="mobile-filter-dropdown" data-aos="zoom-in">
             <button
               class="mobile-filter-btn"
               onclick="toggleMobileFilter('discount')"
@@ -508,7 +515,9 @@
       <div class="container">
         <div class="row">
           <!-- Desktop Sidebar -->
-          <div class="col-3 desktop-sidebar">
+          <div class="col-3 desktop-sidebar" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
             <div class="sidebar1">
               <!-- Filters -->
               <div class="filter-section">
@@ -761,7 +770,9 @@
           <div class="col-9 product-grid-container">
             <div class="products-content">
               <!-- Products will be dynamically generated here -->
-              <div class="product-card">
+              <div class="product-card" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/pexels-photo-195635.png" alt="no" />
                 </div>
@@ -791,7 +802,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/pexels-photo-3689534.png" alt="no" />
                 </div>
@@ -821,7 +834,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/mechanic-changing-brake-discs-car-service-8869.png" alt="no" />
                 </div>
@@ -851,7 +866,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/image (35).png" alt="no" />
                 </div>
@@ -881,7 +898,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/image (36).png" alt="no" />
                 </div>
@@ -911,7 +930,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/image (37).png" alt="no" />
                 </div>
@@ -941,7 +962,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/image (38).png" alt="no" />
                 </div>
@@ -971,7 +994,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/image (39).png" alt="no" />
                 </div>
@@ -1001,7 +1026,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/image (40).png" alt="no" />
                 </div>
@@ -1031,7 +1058,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/unnamed-2-512x313 (3).png" alt="no" />
                 </div>
@@ -1061,7 +1090,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/image (41).png" alt="no" />
                 </div>
@@ -1091,7 +1122,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/image (41).png" alt="no" />
                 </div>
@@ -1121,7 +1154,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/unnamed-2-512x313 (3).png" alt="no" />
                 </div>
@@ -1151,7 +1186,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/image (41).png" alt="no" />
                 </div>
@@ -1181,7 +1218,9 @@
                   </button>
                 </div>
               </div>
-              <div class="product-card">
+              <div class="product-card"data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
                 <div class="product-image">
                   <img src="./assest/img/image (41).png" alt="no" />
                 </div>
@@ -1224,7 +1263,7 @@
     <section class="automobile-sec">
       <div class="container">
         <!-- <div class="row"> -->
-          <div class="automobile-sec-top-part">
+          <div class="automobile-sec-top-part"data-aos="zoom-in-up">
             <h3>We Repair All Makes of <span> Automobiles</span></h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Cras sed et in . At
@@ -1233,7 +1272,9 @@
           </div>
           <div id="automobile-services" class="swiper">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="automobile-div">
@@ -1301,24 +1342,31 @@
           <div class="col-120">
             <div class="footer-content">
               <div class="col-41">
-                <div class="footer-logo">
+                <div class="footer-logo" data-aos="zoom-out-down">
                   <img src="./assest/img/Group 6 (1).png" alt="no" />
                 </div>
-                <p class="footer-content-p1">
+                <p class="footer-content-p1"  data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   aliquam justo nec ligula eleifend efficitur.
                 </p>
-                <p class="footer-content-p2">Subscribe to our newsletter</p>
+                <p class="footer-content-p2" data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500">Subscribe to our newsletter</p>
                 <input
                   type="email"
                   id="footer-email"
                   placeholder="Enter Your E-Mail"
+                   data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
                 />
-                <div class="footer-side1-btn">
+                <div class="footer-side1-btn" data-aos="zoom-in">
                   <a href="#url">Subscribe Now</a>
                 </div>
               </div>
-              <div class="col-15 footer2div">
+              <div class="col-15 footer2div" data-aos="zoom-in">
                 <h3>Quick Links</h3>
                 <ul>
                   <li class="footer2divlink1"><a href="./aboutus.html"> About Us</a></li>
@@ -1327,7 +1375,7 @@
                   <li class="footer2divlink4"><a href="./services.html">Services</a></li>
                 </ul>
               </div>
-              <div class="col-25 footer3div">
+              <div class="col-25 footer3div" data-aos="zoom-in">
                 <h3>Address</h3>
                 <p>
                   (323) 661-3953<br />
@@ -1335,7 +1383,7 @@
                   Los Angeles, California(CA), 90039
                 </p>
               </div>
-              <div class="col-20 footer4div">
+              <div class="col-20 footer4div"  data-aos="zoom-in">
                 <h3>Stay Connected</h3>
                 <ul>
                   <li class="footer4div-logo-content1">
@@ -1375,14 +1423,32 @@
 
     
 
-
+   
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
   
+     <!-- AOS JS    -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
+     <!-- Luxy.js -->
+  <script src="https://cdn.jsdelivr.net/npm/luxy.js@0.1.0/dist/luxy.min.js"></script>
+
+   
+    <!--Cursor js -->
+
+  <!-- <script src="https://unpkg.com/kursor"></script>
+  <script>
+    new kursor({
+      type: 1,
+      removeDefaultCursor: true,
+    });
+  </script> -->
 
 
 
