@@ -5,6 +5,11 @@
         slidesPerView: 1,
         spaceBetween: 20,
 
+         autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+            },
+
         breakpoints: {
           1024: {
             slidesPerView: 4,
