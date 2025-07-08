@@ -673,6 +673,8 @@ a{
   .location-select span{
     font-size: 12px;
   }
+
+  
   
   
   
@@ -681,6 +683,7 @@ a{
   .sidebar {
     width: 100%;
     right: -100%;
+    padding: 80px 75px 30px;
   }
 } 
 

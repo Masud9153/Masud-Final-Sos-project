@@ -653,6 +653,9 @@ ul {
 } */
 
 /* Login Modal Styles */
+
+ 
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -668,6 +671,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* overflow: hidden; */
 }
 
 .modal-overlay.active {
@@ -905,6 +909,7 @@ ul {
   color: #9ec30c;
   text-decoration: underline;
 }
+
 
 /* @media screen and (max-width: 576px) {
   .login-modal {

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navToggler.classList.add("active");
         sidebar.classList.add("active");
         sidebarOverlay.classList.add("active");
-        body.style.overflow = "hidden";
+        body.style.overflow = "hidden !im";
     }
 
     // Function to close sidebar

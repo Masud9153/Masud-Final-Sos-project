@@ -89,7 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function openModal() {
         if (modalOverlay) {
             modalOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
+            document.body.style.overflow = "hidden" ; 
+            document.documentElement.style.overflow = " hidden " ;
         }
     }
 
