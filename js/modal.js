@@ -90,7 +90,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (modalOverlay) {
             modalOverlay.classList.add('active');
             document.body.style.overflow = "hidden" ; 
-            document.documentElement.style.overflow = " hidden " ;
+            // document.documentElement.style.overflow = " hidden " ;
+            const scrollY = window.scrollY;
+            document.documentElement.style.overflow = "hidden";
         }
     }
 
@@ -99,6 +101,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (modalOverlay) {
             modalOverlay.classList.remove('active');
             document.body.style.overflow = '';
+            document.documentElement.style.overflow = "";
+            window.scrollTo(0, scrollY);
         }
     }
 
