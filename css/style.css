@@ -1090,7 +1090,7 @@ option {
 }
 
 .servics-banner-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 
 .servics-upper-part {
@@ -1410,7 +1410,7 @@ a {
 }
 
 .banner4-card-section:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 
 .banner4-card-img {
@@ -1609,7 +1609,7 @@ a {
 }
 
 .packages-card1:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 
 .packages-card1a {
@@ -1622,7 +1622,7 @@ a {
 }
 
 .packages-card1a:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 
 .packages-card1 > h5 {
@@ -2042,8 +2042,8 @@ a {
 }
 
 .stat-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15) !important;
 }
 
 .icon {

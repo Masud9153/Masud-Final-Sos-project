@@ -988,7 +988,7 @@ ul {
 }
 
 .servics-banner-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 
 .servics-upper-part {
@@ -1234,7 +1234,7 @@ a {
 }
 
 .packages-card1:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 
 .packages-card1a {
@@ -1247,7 +1247,7 @@ a {
 }
 
 .packages-card1a:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 
 .packages-card1 > h5 {

@@ -1133,8 +1133,8 @@ li{
 }
 
 .stat-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15) !important;
 }
 
 .icon {
